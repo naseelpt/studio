@@ -1,0 +1,11 @@
+.bg{
+    background-image: url(https://lfs.creativefabrica.com/web/pages/studio/usecases/signature.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bh{
+    background-image: url(https://lfs.creativefabrica.com/web/pages/studio/usecases/bottom-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
