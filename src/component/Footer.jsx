@@ -134,7 +134,7 @@ function Footer() {
   
   
   
-          <div className='bg-white h-72 md:p-14 md:mt-0 mt-10 '>
+          <div className='bg-white h-72 md:p-14 md:mt-0 mt-10 md:flex hidden '>
             <div className='bg-violet-600 md:w-full h-64 rounded-2xl grid grid-cols-5  overflow-hidden '>
   
   

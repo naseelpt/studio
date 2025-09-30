@@ -149,16 +149,16 @@ function Features() {
     
                             <div className=' md:grid-cols-2 grid-cols-1 md:p-32 md:flex gap-5'>
     
-                                <div className='relative md:mt-0 mt-10 hover:transform hover:scale-102 hover:duration-105'>
-                                    <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-crafters.jpg" alt="no image" className='w-[600px] rounded-2xl ' />
-                                    <h1 className='text-white text-4xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
+                                <div className='relative px-5 md:px-0 md:mt-0 mt-10 hover:transform hover:scale-102 hover:duration-105'>
+                                    <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-crafters.jpg" alt="no image" className='md:w-[600px]  rounded-2xl ' />
+                                    <h1 className='text-white md:text-4xl text-xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
                                 </div>
     
-                                <div className='  md:mt-0 mt-10 '>
-                                    <div className='bg-rose-100 md:w-[600px] w-[360px] h-48 grid grid-cols-2  md:h-64 rounded-2xl hover:transform hover:scale-102 hover:duration-105 '>
+                                <div className='  md:mt-0 mt-10 md:px-0 px-4'>
+                                    <div className='bg-rose-100 md:w-[600px] w-[340px] h-48 grid grid-cols-2  md:h-64 rounded-2xl hover:transform hover:scale-102 hover:duration-105 '>
     
     
-                                        <div className='md:text-3xl text-2xl mt-24 ms-5 md:mt-32 md:ms-10  font-bold '>
+                                        <div className='md:text-3xl text-xl mt-24 ms-5 md:mt-32 md:ms-10  font-bold '>
                                             <h1>  Studio for <br /> educaters</h1>
                                         </div>
     
@@ -166,7 +166,7 @@ function Features() {
                                         <div >
     
                                             <div className=' md:mt-0 mt-1  md:-ms-16 -ms-12 absolute '>
-                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/signature.svg" alt="" className='w-80 mt-5' />
+                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/signature.svg" alt="" className='md:w-80 w-52 mt-5' />
                                             </div>
     
                                             <div className='  relative '>
@@ -191,11 +191,11 @@ function Features() {
     
     
     
-                            <div className='grid md:grid-cols-2 pt-12 md:-mt-52  '>
-                                <div className=' hover:transform hover:scale-102 hover:duration-105'>
-                                    <div className='bg-[#EDE7D7] md:w-[600px] w-[360px] md:h-64 md:ms-32 h-48 grid grid-cols-2 md:mt-16 rounded-2xl'>
+                            <div className='grid md:grid-cols-2 grid-cols-1 pt-4 md:-mt-52  '>
+                                <div className=' hover:transform hover:scale-102 hover:duration-105 p-4 md:p-0'>
+                                    <div className='bg-[#EDE7D7] md:w-[600px] w-[340px]  md:h-64 md:ms-32 h-48 grid grid-cols-2 md:mt-16 rounded-2xl  '>
     
-                                        <div className='md:text-3xl text-2xl mt-16 ms-5 md:mt-16 md:ms-10  font-bold '>
+                                        <div className='md:text-3xl text-xl mt-16 ms-5 md:mt-16 md:ms-10  font-bold '>
                                             <h1>Studio for <br /> print on <br /> Demand</h1>
                                         </div>
     
@@ -227,10 +227,10 @@ function Features() {
                                 </div>
     
     
-                                <div className='md:-mt-24 mt-12 ms-2 hover:transform hover:scale-102 hover:duration-105'>
+                                <div className='md:-mt-24 p-4 md:p-0 mt-2 ms-2 hover:transform hover:scale-102 hover:duration-105'>
                                     <div className='relative'>
                                         <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-business.jpg" alt="no image" className='w-[600px] rounded-2xl ' />
-                                        <h1 className='text-white text-4xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
+                                        <h1 className='text-white md:text-4xl text-xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
                                     </div>
     
     
@@ -248,14 +248,14 @@ function Features() {
     
                             <div className='md:px-[130px]  '>
     
-                                <div className='grid md:grid-cols-1 '>
+                                <div className='grid md:grid-cols-1 p-2 md:p-0 pt-10 md:pt-0 '>
     
     
     
     
     
-                                    <div className=' md:bg-[url("https://lfs.creativefabrica.com/web/pages/studio/usecases/bottom-background.png")] bg-violet-500 md:w-[1225px] mt-28 md:h-[500px] w-[360px] rounded-2xl '>
-                                        <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-3d-logo.png" alt="no image" className=' md:ms-[550px] ms-28 -mt-10 md:-mt-16 md:w-28 w-28 ' />
+                                    <div className=' py-5 md:py-0 md:bg-[url("https://lfs.creativefabrica.com/web/pages/studio/usecases/bottom-background.png")] bg-violet-500 md:w-[1225px] mt-28 md:h-[500px] w-[360px] rounded-2xl '>
+                                        <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-3d-logo.png" alt="no image" className=' md:ms-[550px] ms-28 -mt-10 md:-mt-16 md:w-28 w-20 ' />
                                         <h1 className='text-center text-5xl font-bold mt-5 text-white'>Go beyond ordinary</h1>
                                         <p className='font- text-white text-center mt-5 text-xl'>Start your design journey today and try it out for free.</p>
     
