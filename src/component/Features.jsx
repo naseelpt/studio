@@ -20,275 +20,153 @@ import { Element } from 'react-scroll'
 function Features() {
     return (
         <>
-          <Element name='sect3'>
-                <div className='bg-gray-200 h-[3000px] rounded-t-3xl -mt-5  '>
-    
-    
-    
-                    <div className='pt-32'>
-    
-                        <div className='flex justify-center'>
-    
-                            <img src={port} alt="no image" className='w-36 ' />
-    
+            <Element name="sect3">
+                <div className="bg-gray-200 rounded-t-3xl">
+
+                    {/* Hero Section */}
+                    <div className="pt-20 md:pt-32 text-center px-5">
+                        <div className="flex justify-center">
+                            <img src={port} alt="Studio Logo" className="w-32 md:w-36" />
                         </div>
-    
-                        <h1 className='text-5xl font-bold text-center mt-6 '>Join Studio Community</h1>
-                        <p className='mt-3 text-center'>Browse thousands of templates and graphics</p>
-    
-    
-                        <div className='flex items-center mt-8 justify-center '>
-                            <button className='w-44 h-10 rounded-2xl bg-violet-600 text-white font-medium' >Browse all templates</button>
+                        <h1 className="text-3xl md:text-5xl font-bold mt-6">Join Studio Community</h1>
+                        <p className="mt-2 md:mt-3 text-base md:text-lg">Browse thousands of templates and graphics</p>
+                        <div className="flex justify-center mt-6 md:mt-8">
+                            <button className="w-40 md:w-44 h-10 rounded-2xl bg-violet-600 text-white font-medium hover:bg-violet-700 transition">
+                                Browse all templates
+                            </button>
                         </div>
-    
-    
-    
-    
-    
                     </div>
-    
-    
-    
-    
-    
-    
-                    <div className='mt-16  '>
-                        <Marquee speed={100}  >
-    
-                            <div>
-                                <img src={bar} alt="" className='md:w-[470px] w-64   mx-4 rounded-3xl hover:transform hover:scale-102 duration-75  ' />
-                            </div>
-    
-                            <div>
-                                <img src={barr} alt="" className='md:w-[470px] w-64 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75  ' />
-                            </div>
-    
-                            <div>
-                                <img src={barrr} alt="" className='md:w-[470px] w-64 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75 ' />
-                            </div>
-    
-                            <div>
-                                <img src={barrrr} alt="" className='md:w-[280px] md:h-[318px] w-44 h-44 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-                            <div>
-                                <img src={barrrrr} alt="" className='md:w-[470px] w-64 rounded-3xl mx-4  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-                            <div>
-                                <img src={barrrrrr} alt="" className='md:w-[280px] md:h-[318px] w-44 h-44 rounded-3xl mx-4  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-    
+
+                    {/* Marquee Section 1 */}
+                    <div className="mt-12 md:mt-16 overflow-x-hidden">
+                        <Marquee speed={100}>
+                            {[bar, barr, barrr, barrrr, barrrrr, barrrrrr].map((img, idx) => (
+                                <img
+                                    key={idx}
+                                    src={img}
+                                    alt=""
+                                    className="w-36 md:w-64 lg:w-80 h-36 md:h-64 mx-2 md:mx-4 rounded-3xl hover:scale-105 transition duration-150 object-cover"
+                                />
+                            ))}
                         </Marquee>
                     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    <div className='mt-8  '>
-                        <Marquee direction='right' speed={60} >
-    
-                            <div>
-                                <img src={rig} alt="" className='md:w-[280px] md:h-[318px] w-44 h-44 mx-4 rounded-3xl hover:transform hover:scale-102 duration-75  ' />
-                            </div>
-    
-                            <div>
-                                <img src={rigg} alt="" className='md:w-[470px] w-64 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75  ' />
-                            </div>
-    
-                            <div>
-                                <img src={riggg} alt="" className='md:w-[300px] md:h-[318px] w-44 h-44 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75 ' />
-                            </div>
-    
-                            <div>
-                                <img src={rigggg} alt="" className='md:w-[470px] w-64 mx-4 rounded-3xl  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-                            <div>
-                                <img src={riggggg} alt="" className='md:w-[280px] md:h-[318px] w-44 h-44 rounded-3xl mx-4  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-                            <div>
-                                <img src={rigggggg} alt="" className='md:w-[470px] w-64 rounded-3xl mx-4  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-                            <div>
-                                <img src={riggggggg} alt="" className='md:w-[280px] md:h-[318px] w-44 h-44 rounded-3xl mx-4  hover:transform hover:scale-102 duration-75' />
-                            </div>
-    
-    
+
+                    {/* Marquee Section 2 */}
+                    <div className="mt-6 md:mt-8 overflow-x-hidden">
+                        <Marquee direction="right" speed={60}>
+                            {[rig, rigg, riggg, rigggg, riggggg, rigggggg, riggggggg].map((img, idx) => (
+                                <img
+                                    key={idx}
+                                    src={img}
+                                    alt=""
+                                    className="w-36 md:w-64 lg:w-80 h-36 md:h-64 mx-2 md:mx-4 rounded-3xl hover:scale-105 transition duration-150 object-cover"
+                                />
+                            ))}
                         </Marquee>
                     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    <div className=' h-[1300px] mt-24 md:px-4  '>
-                        <div className=' bg-black   h-full rounded-4xl  '>
-    
-    
-                            <div className=' flex justify-center pt-24 '>
-                                {/* <FontAwesomeIcon icon={faStarOfDavid} style={{ color: "#0b07f2", }} size={40} className='w-24' /> */}
-                                <FaStarOfDavid color='yellow' size={40} />
+
+                    {/* Use Cases Section */}
+                    <div className="mt-16 md:mt-24 px-5 md:px-8">
+                        <div className="bg-black rounded-4xl py-12 md:py-16 px-4 md:px-16">
+
+                            {/* Icon */}
+                            <div className="flex justify-center">
+                                <FaStarOfDavid color="yellow" size={40} />
                             </div>
-    
-                            <h1 className='text-5xl mt-5 font-bold text-white text-center'>Studio use cases</h1>
-    
-    
-    
-                            <div className=' md:grid-cols-2 grid-cols-1 md:p-32 md:flex gap-5'>
-    
-                                <div className='relative px-5 md:px-0 md:mt-0 mt-10 hover:transform hover:scale-102 hover:duration-105'>
-                                    <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-crafters.jpg" alt="no image" className='md:w-[600px]  rounded-2xl ' />
-                                    <h1 className='text-white md:text-4xl text-xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
-                                </div>
-    
-                                <div className='  md:mt-0 mt-10 md:px-0 px-4'>
-                                    <div className='bg-rose-100 md:w-[600px] w-[340px] h-48 grid grid-cols-2  md:h-64 rounded-2xl hover:transform hover:scale-102 hover:duration-105 '>
-    
-    
-                                        <div className='md:text-3xl text-xl mt-24 ms-5 md:mt-32 md:ms-10  font-bold '>
-                                            <h1>  Studio for <br /> educaters</h1>
-                                        </div>
-    
-    
-                                        <div >
-    
-                                            <div className=' md:mt-0 mt-1  md:-ms-16 -ms-12 absolute '>
-                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/signature.svg" alt="" className='md:w-80 w-52 mt-5' />
-                                            </div>
-    
-                                            <div className='  relative '>
-                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/monitor-XDR.png" alt="no image" />
-                                            </div>
-    
-    
-    
-                                        </div>
-    
-    
-    
-    
-                                    </div>
-    
-                                </div>
-    
-    
-    
-                            </div>
-    
-    
-    
-    
-                            <div className='grid md:grid-cols-2 grid-cols-1 pt-4 md:-mt-52  '>
-                                <div className=' hover:transform hover:scale-102 hover:duration-105 p-4 md:p-0'>
-                                    <div className='bg-[#EDE7D7] md:w-[600px] w-[340px]  md:h-64 md:ms-32 h-48 grid grid-cols-2 md:mt-16 rounded-2xl  '>
-    
-                                        <div className='md:text-3xl text-xl mt-16 ms-5 md:mt-16 md:ms-10  font-bold '>
-                                            <h1>Studio for <br /> print on <br /> Demand</h1>
-                                        </div>
-    
-    
-                                        <div className='md:ms-32 ms-10'>
-    
-                                            <div className=' md:mt-0 mt-1  md:-ms-16 -ms-12 absolute '>
-                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/flying-birds.svg" alt="" className='md:w-52 w-32 mt-5' />
-                                            </div>
-    
-                                            <div className='  relative  '>
-                                                <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-t-shirt.png" alt="no image" className='md:w-[170px] w-32' />
-                                            </div>
-    
-    
-    
-                                        </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                                    </div>
-    
-                                </div>
-    
-    
-                                <div className='md:-mt-24 p-4 md:p-0 mt-2 ms-2 hover:transform hover:scale-102 hover:duration-105'>
-                                    <div className='relative'>
-                                        <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-business.jpg" alt="no image" className='w-[600px] rounded-2xl ' />
-                                        <h1 className='text-white md:text-4xl text-xl font-bold absolute bottom-12 left-1/12 '>Studio for crafters</h1>
-                                    </div>
-    
-    
-                                </div>
-    
-    
-    
-    
-    
-    
-                            </div>
-    
-    
-    
-    
-                            <div className='md:px-[130px]  '>
-    
-                                <div className='grid md:grid-cols-1 p-2 md:p-0 pt-10 md:pt-0 '>
-    
-    
-    
-    
-    
-                                    <div className=' py-5 md:py-0 md:bg-[url("https://lfs.creativefabrica.com/web/pages/studio/usecases/bottom-background.png")] bg-violet-500 md:w-[1225px] mt-28 md:h-[500px] w-[360px] rounded-2xl '>
-                                        <img src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-3d-logo.png" alt="no image" className=' md:ms-[550px] ms-28 -mt-10 md:-mt-16 md:w-28 w-20 ' />
-                                        <h1 className='text-center text-5xl font-bold mt-5 text-white'>Go beyond ordinary</h1>
-                                        <p className='font- text-white text-center mt-5 text-xl'>Start your design journey today and try it out for free.</p>
-    
-                                        <button className='bg-white w-32 h-10 md:ms-[550px] ms-32 mt-6 rounded-2xl hover:text-blue-600'>create for free</button>
-    
-    
-                                    </div>
-    
-                                </div>
-    
-    
-                            </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                            <h1 className="text-3xl md:text-5xl font-bold text-white text-center mt-4 md:mt-5">Studio Use Cases</h1>
+
+                             <div className="mt-16 px-5">
+  <div className="bg-black rounded-4xl py-12 px-4">
+
+    {/* Icon */}
+    <div className="flex justify-center">
+      <FaStarOfDavid color="yellow" size={40} />
+    </div>
+    <h1 className="text-3xl md:text-5xl font-bold text-white text-center mt-4 md:mt-5">
+      Studio Use Cases
+    </h1>
+
+    {/* First Row: Card 1 + Card 2 */}
+    <div className="flex flex-col md:flex-row gap-6 mt-8">
+      {/* Card 1 */}
+      <div className="flex-1 relative hover:scale-105 transition duration-150">
+        <img
+          src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-crafters.jpg"
+          alt=""
+          className="w-full rounded-2xl object-cover"
+        />
+        <h1 className="absolute bottom-4 left-4 md:bottom-6 md:left-6 text-lg md:text-4xl text-white font-bold">
+          Studio for Crafters
+        </h1>
+      </div>
+
+      {/* Card 2 */}
+      <div className="flex-1 relative hover:scale-105 transition duration-150">
+        <div className="bg-rose-100 rounded-2xl grid grid-cols-2 relative overflow-hidden p-4">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-lg md:text-3xl font-bold">Studio for Educators</h1>
+          </div>
+          <div className="relative flex items-center justify-end">
+            <img
+              src="https://lfs.creativefabrica.com/web/pages/studio/usecases/signature.svg"
+              alt=""
+              className="absolute top-2 md:top-4 w-40 md:w-80 right-0"
+            />
+            <img
+              src="https://lfs.creativefabrica.com/web/pages/studio/usecases/monitor-XDR.png"
+              alt=""
+              className="relative z-10 w-28 md:w-auto mx-auto md:mx-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Second Row: Card 3 + Card 4 */}
+    <div className="flex flex-col md:flex-row gap-6 mt-8">
+      {/* Card 3 */}
+      <div className="flex-1 relative hover:scale-105 transition duration-150">
+        <div className="bg-[#EDE7D7] rounded-2xl grid grid-cols-2 relative overflow-hidden p-4">
+          <div className="flex flex-col justify-center">
+            <h1 className="text-lg md:text-3xl font-bold">Studio for Print on Demand</h1>
+          </div>
+          <div className="relative flex items-center justify-end">
+            <img
+              src="https://lfs.creativefabrica.com/web/pages/studio/usecases/flying-birds.svg"
+              alt=""
+              className="absolute top-2 md:top-4 w-32 md:w-52 right-0"
+            />
+            <img
+              src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-t-shirt.png"
+              alt=""
+              className="relative z-10 w-28 md:w-[170px] mx-auto md:mx-0"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="flex-1 relative hover:scale-105 transition duration-150 xl:-mt-36">
+        <img
+          src="https://lfs.creativefabrica.com/web/pages/studio/usecases/studio-for-business.jpg"
+          alt=""
+          className="w-full rounded-2xl object-cover"
+        />
+        <h1 className="absolute bottom-4 left-4 md:bottom-6 md:left-6 text-lg md:text-4xl text-white font-bold">
+          Studio for Business
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
                         </div>
                     </div>
-    
-    
                 </div>
-          </Element>
+            </Element>
+
 
 
 

@@ -21,7 +21,7 @@ function App() {
        <About/>
        <Features/>
        <Footer/>
-       </div>
+       </div> 
 
 
 

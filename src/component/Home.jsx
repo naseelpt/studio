@@ -39,8 +39,8 @@ function Home() {
     
     
                     <div className='mt-10 '>
-                        <h1 className='text-7xl text-center text-white font-bold'>Go Beyond Ordinary</h1>
-                        <p className='text-xl md:px-[420px] ms-5 mt-8 text-white'>Transform your creative visions into tangible designs with Creative Fabrica's Studio — a space crafted specifically for innovators like you. Dive into the boundless possibilities with Studio, offering you unrestricted access to our extensive collection of millions of assets, ready to bring your ideas to life</p>
+                        <h1 className='xl:text-7xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-center text-white font-bold'>Go Beyond Ordinary</h1>
+                        <p className='text-xl xl:px-52 px-10 ms-5 mt-8 text-white'>Transform your creative visions into tangible designs with Creative Fabrica's Studio — a space crafted specifically for innovators like you. Dive into the boundless possibilities with Studio, offering you unrestricted access to our extensive collection of millions of assets, ready to bring your ideas to life</p>
     
     
                     </div>
